@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/769.78482462.chunk.js","mappings":"iJASA,UATgB,WACd,OACE,iCACE,sDACA,iJAGL,C","sources":["020_pure_function/start/Example.js"],"sourcesContent":["const Example = () => {\n  return (\n    <>\n      <h3>純粋関数</h3>\n      <p>fn(決まった引数) には 決まった戻り値 を返す</p>\n    </>\n  );\n};\n\nexport default Example;\n"],"names":[],"sourceRoot":""}

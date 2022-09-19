@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/486.995b421b.chunk.js","mappings":"iJASA,UATgB,WACd,OACE,iCACE,0FACA,wKAGL,C","sources":["010_data_procedure/start/Example.js"],"sourcesContent":["const Example = () => {\n  return (\n    <>\n      <h3>状態管理と処理を分離</h3>\n      <p>状態（データ）と処理（やりたいこと）は切り離す</p>\n    </>\n  );\n};\n\nexport default Example;\n"],"names":[],"sourceRoot":""}

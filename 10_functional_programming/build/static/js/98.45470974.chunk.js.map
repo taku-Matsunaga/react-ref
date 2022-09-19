@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/98.45470974.chunk.js","mappings":"gJAQA,UARgB,WAEd,OACE,uBAGH,C","sources":["040_react_pure_fn/start/Example.js"],"sourcesContent":["const Example = () => {\n\n  return (\n    <>\n    </>\n  );\n};\n\nexport default Example;\n"],"names":[],"sourceRoot":""}

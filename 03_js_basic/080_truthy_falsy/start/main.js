@@ -13,14 +13,15 @@ NaN (Not a Number)
 
 const a = 0;
 let result = a ? 10 : -10;
-console.log(result);
+// console.log(result);
 
 const falsy = 0;
 const truthy = 1;
-console.log(Boolean(truthy));
-console.log(Boolean(falsy));
+// console.log(Boolean(truthy));
+// console.log(Boolean(falsy));
 
 // 論理積 (&&) について
+// falsyの値を返す、truthyなものだけの場合は一番右の値を返す
 const resultA = "" && "foo";
 const resultB = 2 && 1 && 0 && 3;
 const resultC = "foo" && 4;
@@ -30,6 +31,7 @@ const resultC = "foo" && 4;
 // console.log(resultC);
 
 // 理論和 (||) について
+// truthyな値を返す、truthyなものだけの場合は左のものを返す
 const resultD = "" || "foo";
 const resultE = 0 || 2 || 0;
 const resultF = "foo" || 4;

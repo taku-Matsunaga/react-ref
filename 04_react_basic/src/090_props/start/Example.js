@@ -1,5 +1,19 @@
-import Child from "./components/Child";
+import Child from './components/Child'
 
-const Example = () => <Child />;
+const Example = () => {
+  const hello = (arg) => `Hello ${arg}`
+  const o = {
+    color: 'red',
+    num: 123
+  }
 
-export default Example;
+  return (
+    <>
+      {/* オブジェクトを展開するスプレッド演算子でも渡せる */}
+      <Child {...o} fn={hello} bool obj={{ name: 'Tom', age: 18 }} />
+      {/* <Child color="red" /> */}
+    </>
+  )
+}
+
+export default Example

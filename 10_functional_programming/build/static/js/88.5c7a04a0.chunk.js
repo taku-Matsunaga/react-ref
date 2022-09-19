@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkreact_app_template=self.webpackChunkreact_app_template||[]).push([[88],{2088:function(e,n,t){t.r(n);var a=t(184);n.default=function(){var e={val:2},n=function(e){return{val:2*e.val}}(e);return console.log("newNum",n,"num",e),console.log(n===e),(0,a.jsx)(a.Fragment,{children:(0,a.jsx)("div",{children:"Immutability"})})}}}]);
+//# sourceMappingURL=88.5c7a04a0.chunk.js.map

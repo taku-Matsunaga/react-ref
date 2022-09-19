@@ -1,11 +1,20 @@
-const Example = () => {
-  return (
-    <p style={{ textAlign: "center" }}>
-      startフォルダの内容が表示されます。
-      <br />
-      練習用に使ってください！
-    </p>
-  );
-};
+import { useState } from 'react'
 
-export default Example;
+const Example = () => {
+  const [isChecked, setIsChecked] = useState(true)
+
+  return (
+    <div>
+      <label htmlFor="my-check">チェック：</label>
+      <input
+        type="checkbox"
+        id="my-check"
+        checked={isChecked}
+        onChange={() => setIsChecked((prevState) => !prevState)}
+      />
+      <div>{isChecked ? 'ON' : 'OFF'}</div>
+    </div>
+  )
+}
+
+export default Example

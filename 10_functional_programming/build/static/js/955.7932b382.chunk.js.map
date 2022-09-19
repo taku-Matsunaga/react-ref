@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/955.7932b382.chunk.js","mappings":"iJASA,UATgB,WACd,OACE,iCACE,wEACA,4JAGL,C","sources":["030_immutability/start/Example.js"],"sourcesContent":["const Example = () => {\n  return (\n    <>\n      <h3>不変性（Immutability）</h3>\n      <p>引数で渡ってきたオブジェクトを変更しない！</p>\n    </>\n  );\n};\n\nexport default Example;\n"],"names":[],"sourceRoot":""}

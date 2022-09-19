@@ -1,7 +1,14 @@
 const Example = () => {
-  return (
-    <></>
-  );
-};
+  const clickHandler = () => {
+    alert('ボタンがクリックされました')
+  }
 
-export default Example;
+  return (
+    <>
+      <button onClick={clickHandler}>クリックしてね</button>
+      <button>クリックしてね</button>
+    </>
+  )
+}
+
+export default Example

@@ -1,16 +1,42 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-   <script src="/libs/react.development.js"></script>
-   <script src="/libs/react-dom.development.js"></script>
-   <script src="/libs/babel-standalone.js"></script>
+    <script src="/libs/react.development.js"></script>
+    <script src="/libs/react-dom.development.js"></script>
+    <script src="/libs/babel-standalone.js"></script>
 </head>
+
 <body>
     <div id="app"></div>
     <script type="text/babel">
         const appEl = document.querySelector('#app');
         const root = ReactDOM.createRoot(appEl);
-        root.render(<h1>こんにちは</h1>);
+
+        // 関数コンポーネント
+        // 関数名の先頭は大文字とすること（babelでJSXと認識しているため、無いと普通のHTMLとなってしまう）
+        function Example2(){
+            return <h1>Hello React</h1>;
+        }
+
+        // アロー関数
+        // returnのみ1行の場合はシンプルにできる
+        const Example = () => <h1>Hello React</h1>;
+
+        // 複数のJSXを返す場合はreturnの後に丸括弧で囲む
+        // 丸括弧はグループ一つにまとめるという意味
+        // returnの後に改行を入れるとundefinedとしてJSエンジンが定義してしまうため
+        const Example3 = () => {
+            return(
+                <div>
+                    <h1>Hello React3</h1>
+                </div>
+            );
+        }
+        
+
+        root.render(<Example3 />);
     </script>
 </body>
+
 </html>
