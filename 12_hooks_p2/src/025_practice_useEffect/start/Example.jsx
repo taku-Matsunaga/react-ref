@@ -1,7 +1,12 @@
-import { useState } from 'react';
+import { useEffect } from 'react'
+import { useState } from 'react'
 
 const Example = () => {
-  const [checked, setChecked] = useState(false);
+  const [checked, setChecked] = useState(false)
+
+  useEffect(() => {
+    checked && window.alert('clicked')
+  }, [checked])
 
   return (
     <>
@@ -14,7 +19,7 @@ const Example = () => {
         click me
       </label>
     </>
-  );
-};
+  )
+}
 
-export default Example;
+export default Example
