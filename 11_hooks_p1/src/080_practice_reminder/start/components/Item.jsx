@@ -1,3 +1,4 @@
+import React from 'react'
 import { useState } from 'react'
 import { useDispatchTodos } from '../context/TodoContext'
 
@@ -5,7 +6,9 @@ const Item = ({ todo }) => {
   const [editingContent, setEditingContent] = useState(todo.content)
   const dispatch = useDispatchTodos()
 
-  const changeContent = (e) => setEditingContent(e.target.value)
+  const changeContext = (e) => {
+    setEditingContent(e.target.value)
+  }
 
   const toggleEditMode = () => {
     const newTodo = { ...todo, editing: !todo.editing }
@@ -14,11 +17,7 @@ const Item = ({ todo }) => {
 
   const confirmContent = (e) => {
     e.preventDefault()
-    const newTodo = {
-      ...todo,
-      editing: !todo.editing,
-      content: editingContent
-    }
+    const newTodo = { ...todo, editing: !todo.editing, content: editingContent }
     dispatch({ type: 'todo/update', todo: newTodo })
   }
 
@@ -31,7 +30,7 @@ const Item = ({ todo }) => {
       <button onClick={() => complete(todo)}>完了</button>
       <form onSubmit={confirmContent} style={{ display: 'inline' }}>
         {todo.editing ? (
-          <input type="text" value={editingContent} onChange={changeContent} />
+          <input type="text" value={editingContent} onChange={changeContext} />
         ) : (
           <span onDoubleClick={toggleEditMode}>{todo.content}</span>
         )}
